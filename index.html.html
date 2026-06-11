@@ -675,9 +675,12 @@ body {
   .nav { padding: 1rem 1.25rem; }
   .wordmark { font-size: 14px; letter-spacing: 3px; }
   .tab { padding: 7px 12px; font-size: 11px; }
+  /* Icon-only call button on mobile so it never overflows */
+  .nav-call-text { display: none; }
+  .nav-call-btn { padding: 9px 11px; border-radius: 50%; }
   /* Full bleed hero on mobile */
   .hero { min-height: 85vh; }
-  .hero-content-side { width: 100%; padding: 7rem 1.5rem 3rem; background: linear-gradient(to top, rgba(253,250,248,.95) 60%, transparent 100%); }
+  .hero-content-side { width: 100%; padding: 9rem 1.5rem 3rem; justify-content: flex-end; background: linear-gradient(to top, rgba(253,250,248,.72) 35%, rgba(253,250,248,.35) 65%, transparent 100%); }
   .hero h1 { font-size: 44px; }
   .hero-sub { font-size: 13px; }
   .hero.hero-centered { padding: 3rem 1.25rem 2.5rem; }
