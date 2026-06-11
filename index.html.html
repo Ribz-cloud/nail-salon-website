@@ -755,7 +755,7 @@ body {
           <h1>Where Nails<br>Become <em>Art &amp; Ritual</em></h1>
           <p class="hero-sub">Luxury nail treatments crafted for the modern connoisseur — where every detail is intentional.</p>
           <div class="cta-row">
-            <button class="btn-primary" onclick="nav('booking')">Book appointment</button>
+            <a href="https://manage2.mangoforsalon.com/booking?id=QGa3ycY0tOVFOlR1XU5oBA%3D%3D" target="_blank" rel="noopener" class="btn-primary" style="text-decoration:none;display:inline-flex;align-items:center;">Book appointment</a>
             <button class="btn-ghost" onclick="nav('gallery')">View gallery</button>
           </div>
         </div>
@@ -870,7 +870,7 @@ body {
       </div>
 
       <div class="gal-grid" id="galGrid"></div>
-      <button class="btn-primary btn-full" onclick="nav('booking')">Book this look →</button>
+      <a href="https://manage2.mangoforsalon.com/booking?id=QGa3ycY0tOVFOlR1XU5oBA%3D%3D" target="_blank" rel="noopener" class="btn-primary btn-full" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">Book this look →</a>
     </div>
   </div>
 
@@ -998,7 +998,7 @@ body {
         </div>
 
         <div class="divider"></div>
-        <button class="btn-primary btn-full" onclick="nav('booking')">Book your appointment →</button>
+        <a href="https://manage2.mangoforsalon.com/booking?id=QGa3ycY0tOVFOlR1XU5oBA%3D%3D" target="_blank" rel="noopener" class="btn-primary btn-full" style="text-decoration:none;display:inline-flex;align-items:center;justify-content:center;">Book your appointment →</a>
       </div>
 
     </div>
@@ -1010,87 +1010,24 @@ body {
       <div class="s-eyebrow">Scheduling</div>
       <div class="s-title">Reserve your moment</div>
 
-      <div class="card" style="padding:1.4rem;margin-bottom:1.25rem;">
-        <div class="bk-form">
-          <div class="bk-row">
-            <div class="fg">
-              <label>Service</label>
-              <select id="svcSel">
-                <option>Classic Manicure — $35</option>
-                <option>Gel Extensions — $75</option>
-                <option>Nail Art — $55</option>
-                <option>Pedicure — $65</option>
-                <option>Waxing — $90</option>
-                <option>Chrome Powder — $45</option>
-              </select>
-            </div>
-            <div class="fg">
-              <label>Technician</label>
-              <select>
-                <option>Any available</option>
-                <option>Maria — Nail Art</option>
-                <option>Sofia — Gel Expert</option>
-                <option>Aria — Spa</option>
-              </select>
-            </div>
-          </div>
-          <div class="bk-row">
-            <div class="fg"><label>Date</label><input type="date" id="dateInp"/></div>
-            <div class="fg"><label>Your name</label><input type="text" placeholder="Full name" id="clientName"/></div>
-          </div>
-          <div class="bk-row">
-            <div class="fg">
-              <label>Email address</label>
-              <input type="email" id="clientEmail" placeholder="you@email.com"/>
-            </div>
-            <div class="fg">
-              <label>Phone number</label>
-              <input type="tel" id="clientPhone" placeholder="(239) 555-0100"/>
-            </div>
-          </div>
-          <div class="notif-block">
-            <div class="notif-label">Send me reminders via</div>
-            <div class="notif-options">
-              <label class="notif-toggle">
-                <input type="checkbox" id="notifEmail" checked onchange="updateNotifHint()"/>
-                <span class="notif-pill">
-                  <span class="notif-icon">✉️</span> Email
-                </span>
-              </label>
-              <label class="notif-toggle">
-                <input type="checkbox" id="notifSms" checked onchange="updateNotifHint()"/>
-                <span class="notif-pill">
-                  <span class="notif-icon">💬</span> Text (SMS)
-                </span>
-              </label>
-              <label class="notif-toggle">
-                <input type="checkbox" id="notifBoth" onchange="updateNotifHint()"/>
-                <span class="notif-pill">
-                  <span class="notif-icon">🔔</span> Both
-                </span>
-              </label>
-            </div>
-            <div class="notif-hint" id="notifHint">You'll receive a confirmation + 24 hr reminder via <strong>Email & SMS</strong>.</div>
-          </div>
-        </div>
+      <div class="card" style="padding:2.25rem 1.6rem;margin-bottom:1.25rem;text-align:center;">
+        <div style="font-size:34px;margin-bottom:.6rem;">&#128338;</div>
+        <div style="font-family:'Cormorant Garamond',serif;font-size:26px;font-weight:400;color:var(--rose-deep);margin-bottom:.5rem;">Book online in seconds</div>
+        <p style="font-size:13.5px;color:var(--muted);max-width:420px;margin:0 auto 1.4rem;line-height:1.65;">
+          See live availability, pick your service and technician, and get a confirmation
+          sent straight to your phone &mdash; with a reminder before your visit.
+        </p>
+        <a href="https://manage2.mangoforsalon.com/booking?id=QGa3ycY0tOVFOlR1XU5oBA%3D%3D" target="_blank" rel="noopener"
+           class="btn-primary btn-full" style="display:inline-flex;align-items:center;justify-content:center;gap:8px;max-width:340px;text-decoration:none;">
+          Book your appointment &rarr;
+        </a>
       </div>
 
-      <div class="s-eyebrow" style="margin-bottom:.6rem;">Available times</div>
-      <div class="time-grid">
-        <div class="time-slot taken">9:00 AM</div>
-        <div class="time-slot" onclick="pickTime(this)">9:30 AM</div>
-        <div class="time-slot" onclick="pickTime(this)">10:00 AM</div>
-        <div class="time-slot taken">10:30 AM</div>
-        <div class="time-slot" onclick="pickTime(this)">11:00 AM</div>
-        <div class="time-slot" onclick="pickTime(this)">11:30 AM</div>
-        <div class="time-slot" onclick="pickTime(this)">1:00 PM</div>
-        <div class="time-slot taken">1:30 PM</div>
-        <div class="time-slot" onclick="pickTime(this)">2:00 PM</div>
-        <div class="time-slot" onclick="pickTime(this)">2:30 PM</div>
-        <div class="time-slot" onclick="pickTime(this)">3:00 PM</div>
-        <div class="time-slot" onclick="pickTime(this)">4:00 PM</div>
+      <div class="card" style="padding:1.4rem 1.6rem;text-align:center;">
+        <div style="font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:.4rem;">Prefer to talk?</div>
+        <p style="font-size:13.5px;color:var(--muted);margin:0 0 .8rem;">Call us and we&rsquo;ll find the perfect time for you.</p>
+        <a href="tel:+12394546289" style="font-family:'Cormorant Garamond',serif;font-size:24px;color:var(--rose-deep);text-decoration:none;font-weight:500;">&#128222; (239) 454-6289</a>
       </div>
-      <button class="btn-primary btn-full" onclick="confirmBooking()">Confirm booking</button>
     </div>
   </div>
 
@@ -1162,64 +1099,6 @@ function filterGal(el, f) {
   renderGallery(f);
 }
 
-/* ── Booking ── */
-function pickTime(el) {
-  document.querySelectorAll('.time-slot:not(.taken)').forEach(t => t.classList.remove('selected'));
-  el.classList.add('selected');
-}
-
-function updateNotifHint() {
-  const email = document.getElementById('notifEmail');
-  const sms   = document.getElementById('notifSms');
-  const both  = document.getElementById('notifBoth');
-  const hint  = document.getElementById('notifHint');
-  if (!hint) return;
-
-  // "Both" toggles the other two on simultaneously
-  if (event && event.target === both) {
-    if (both.checked) { email.checked = true; sms.checked = true; }
-    else              { email.checked = false; sms.checked = false; }
-  } else {
-    both.checked = email.checked && sms.checked;
-  }
-
-  const via = [];
-  if (email.checked) via.push('Email');
-  if (sms.checked)   via.push('SMS');
-
-  if (via.length === 0) {
-    hint.innerHTML = 'No reminders — we\'ll still send a booking reference to your email.';
-  } else {
-    hint.innerHTML = 'You\'ll receive a confirmation + 24 hr reminder via <strong>' + via.join(' &amp; ') + '</strong>.';
-  }
-}
-
-function confirmBooking() {
-  const sel   = document.querySelector('.time-slot.selected');
-  const svc   = document.getElementById('svcSel').value;
-  const name  = (document.getElementById('clientName')?.value  || '').trim();
-  const email = (document.getElementById('clientEmail')?.value || '').trim();
-  const phone = (document.getElementById('clientPhone')?.value || '').trim();
-  const wantsEmail = document.getElementById('notifEmail')?.checked;
-  const wantsSms   = document.getElementById('notifSms')?.checked;
-
-  if (!sel)   { toast('Please select a time first'); return; }
-  if (!name)  { toast('Please enter your name'); return; }
-  if (wantsEmail && !email) { toast('Please enter your email address'); return; }
-  if (wantsSms   && !phone) { toast('Please enter your phone number'); return; }
-
-  const via = [];
-  if (wantsEmail) via.push('email');
-  if (wantsSms)   via.push('SMS');
-  const notifMsg = via.length ? ' · Confirmation sent via ' + via.join(' & ') : '';
-
-  toast('Booked! ' + sel.textContent + ' — ' + svc.split('—')[0].trim() + notifMsg);
-  pts += 50;
-  sel.classList.remove('selected');
-  sel.classList.add('taken');
-}
-
-
 /* ── Toast ── */
 function toast(msg) {
   const el = document.getElementById('toastEl');
@@ -1249,10 +1128,6 @@ function toast(msg) {
 
 /* ── Init ── */
 (function() {
-  const d = new Date(); d.setDate(d.getDate() + 1);
-  const iso = d.toISOString().split('T')[0];
-  const inp = document.getElementById('dateInp');
-  inp.value = iso; inp.min = iso;
   renderGallery('all');
 })();
 </script>
